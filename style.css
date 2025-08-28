@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #23272a;
+    background-color: #fff;
+}
+
+/* header */
+header {
+    background-image: url(assets/img-1.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.section-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.section-header p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 28px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+#windows {
+    background-color: white;
+    color: black;
+}
+
+#discord {
+    background-color: #23272a;
+    color: white;
+}
+
+/* sections */
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+main section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.paragrafo {
+    max-width: 500px;
+}
+
+.paragrafo h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.paragrafo p {
+    font-size: 18px;
+    color: #4f545c;
+}
+
+/* Seções com fundo diferente */
+.escuro {
+    background-color: #f6f6f6;
+}
+
+footer {
+    background-color: #23272A;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+}
+
+/* responsivo */
+@media (max-width: 768px) {
+    .section-header h1 {
+        font-size: 36px;
+    }
+
+    .paragrafo h2 {
+        font-size: 26px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
